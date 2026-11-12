@@ -18,7 +18,7 @@ A shipped app is a public file. Anyone can download it and read it. This skill f
 - You must decide if code shrinking or symbol stripping is enough.
 - You must evaluate a reverse-engineering tool for repeated use.
 
-Do not use this skill to attack an app you do not own or have permission to test.
+Test only apps you own or have written permission to test. Do not use this skill to attack any other app. If the user does not state that they own the app or have permission, ask before you start.
 
 ## Workflow
 
@@ -44,12 +44,12 @@ Follow the steps in order. The full procedure is in `PLAYBOOK.md` at the reposit
 
 ## Red flags
 
-| Thought | Reality |
-|---|---|
+| Thought                              | Reality                                                                                 |
+| ------------------------------------ | --------------------------------------------------------------------------------------- |
 | "R8 or strip is on, so we are safe." | They change DEX names and symbols only. The bundle, assets and resources stay readable. |
-| "The tool gave zero results." | Check that the tool can read the format. Zero from an unsupported file is not a pass. |
-| "The first scan is enough." | First scans miss things. Re-measure on the final builds. |
-| "The key is public by design." | Public does not mean safe. Check quota and restriction. |
+| "The tool gave zero results."        | Check that the tool can read the format. Zero from an unsupported file is not a pass.   |
+| "The first scan is enough."          | First scans miss things. Re-measure on the final builds.                                |
+| "The key is public by design."       | Public does not mean safe. Check quota and restriction.                                 |
 
 ## Common mistakes
 
